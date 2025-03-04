@@ -18,7 +18,7 @@ export const ProductCard = (props) => {
           {data.price} ₹
         </Typography>
         {data.quantity > 0 &&
-        cart.find((item) => item.id === data.id)?.cartQuantity == undefined ? (
+        cart.find((item) => item.id == data.id)?.cartQuantity == undefined ? (
           <Button
             size="small"
             color="primary"
@@ -34,7 +34,7 @@ export const ProductCard = (props) => {
             </Button>
           )
         )}
-        {cart.find((item) => item.id === data.id)?.cartQuantity !==
+        {cart.find((item) => item.id == data.id)?.cartQuantity !==
           undefined && (
           <ButtonGroup
             disableElevation
