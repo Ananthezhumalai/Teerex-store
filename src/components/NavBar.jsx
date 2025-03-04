@@ -18,9 +18,11 @@ export const NavBar = () => {
           Products
         </Link>
         <div>
+        <Link to="/cart"  className="link-style">
           <Badge badgeContent={cart.length} color="primary">
             <ShoppingCartIcon />
           </Badge>
+          </Link>
           </div>
       </div>
     </div>
