@@ -162,7 +162,6 @@ const TrexContextProvider = ({ children }) => {
         addProductTocart,
         increaseQuantity,
         decreaseQuantity,
-        productDetails,
         setProductDetails,
         searchInputData,
         setSearchInputData,
